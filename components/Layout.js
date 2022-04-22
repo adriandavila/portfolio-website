@@ -2,27 +2,27 @@
 import Meta from './Meta'
 import Nav from './Nav'
 import Hero from './Hero'
-
-import SideElement from './SideElement'
-import Email from './email'
+import SideSocials from './SideSocials'
+import SideEmail from './SideEmail'
 
 // Stylesheets
 import styles from '../styles/Layout.module.css'
 
 const Layout = ({children}) => {
   return (
-      <div className="website">
+    <>
+      <div className="home">
         <Meta />
         <Nav />
-        <div className={styles.container}>
-            <main className={styles.main}>
-                <Hero />
-                {children}
-            </main>
-        </div>
-        <SideElement />
-        <Email />
+        <Hero />
       </div>
+      <div className="content">
+        {children}
+      </div>
+      <SideSocials />
+      <SideEmail />
+    </>
+      
       
   )
 }

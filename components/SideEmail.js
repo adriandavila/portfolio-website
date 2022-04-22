@@ -1,6 +1,6 @@
 import { email } from '../config'
 
-const Email = () => {
+const SideEmail = () => {
   return (
     <div className="side-email">
         <a href={"mailto:"+email}>{email}</a>
@@ -8,4 +8,4 @@ const Email = () => {
   )
 }
 
-export default Email
+export default SideEmail

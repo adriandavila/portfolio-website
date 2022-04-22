@@ -55,6 +55,16 @@ a {
   box-sizing: border-box;
 }
 
+.main-container {
+  padding-inline: clamp(25px, 7vw, 100px);
+}
+
+/* Background Image on Homepage */
+
+.home {
+  background-image: url('../public/background-home-desktop.jpg');
+  background-repeat: no-repeat;
+}
 
 /* Underline Indicators */
 .underline-indicators > * {
@@ -72,21 +82,6 @@ a {
   }
 }
 
-/* Underline Indicator */
-.underline-indicator {
-  padding: var(--underline-gap, 1rem) 0;
-  border-bottom: .2rem solid rgba(230, 241, 255, 0);
-
-  &:hover,
-  &:focus {
-    border-color: rgba(230, 241, 255, 0.5);
-  }
-
-  .active,
-  &[aria-selected="true"] {
-    border-color: rgba(230, 241, 255, 1);
-  }
-}
 
 
 /* ------------- Navigation ------------- */
@@ -148,6 +143,7 @@ a {
 
 .logo {
   margin: 1.5rem;
+  width: 75px;
 }
 
 .mobile-nav-toggle {
@@ -172,6 +168,7 @@ a {
 
     transform: translateX(100%);
     transition: transform 350ms ease-out;
+    
   }
 
   .mobile-nav-toggle {
@@ -193,7 +190,7 @@ a {
   }
 }
 
-.resume-button {
+.green-button {
   color: var(--green);
   background-color: transparent;
   border: 1px solid var(--green);
@@ -243,8 +240,26 @@ a {
 
 
 
-/* Side Social List */
-.side-element {
+
+/* ------------- Hero ------------- */
+.section-hero {
+  height: 100vh;
+  padding-inline: clamp(25px, 7vw, 100px);
+}
+
+
+/* ------------- Projects ------------- */
+
+
+
+
+/* ------------- Experience ------------- */
+
+
+
+
+/* ------------- Side Social List ------------- */
+.side-socials {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -298,7 +313,6 @@ a {
   
 }
 
-
 /* Side Email Component */
 .side-email {
   display: flex;
@@ -347,11 +361,5 @@ a {
   }
 }
 
-
-/* Background Image on Homepage */
-
-.website {
-  background-image: url('../public/background-home-desktop.jpg');
-}
 
 

@@ -1,7 +1,11 @@
+import Experience from "../components/Experience"
+import Projects from "../components/Projects"
+
 export default function Home() {
   return (
-    <div>
-      <h1>Welcome to Adrian's Website</h1>
+    <div className="main-container">
+      <Experience />
+      <Projects />
     </div>
   )
 }
