@@ -1,0 +1,28 @@
+.title {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.title h1 {
+  margin: 0px 0px 30px 4px;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: clamp(var(--fz-sm),5vw,var(--fz-md));
+  font-weight: 400;
+}
+
+.title h2 {
+  margin: 0px;
+  font-size: clamp(40px, 8vw, 80px);
+}
+
+.title h3 {
+  margin: 0px;
+  font-size: clamp(40px, 8vw, 50px);
+}
+
