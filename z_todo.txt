@@ -1,2 +1,26 @@
-Navbar goal: https://www.youtube.com/watch?v=HbBMp6yUXO0
-s
+Home/Hero:
+- Fix navbar when resizing page
+- Change background
+- Fix hero text positioning & styling
+- New logo
+- Link to resume (change in nav)
+- Animations on navbar upon website load
+
+!!! About
+!!! Experience
+
+Projects:
+- Fix titles & subtitles
+- Fix feature project styling for mobile & smaller screen sizes
+- Create archive (will require some routing - complicated!)
+- Limit "other projects" to 6, add "show more button" that limits to 12
+
+!!! Research
+!!! Contact
+
+Config:
+- Actually fill in my...
+    - Bio
+    - Experience
+    - Projects
+    - Research

@@ -46,6 +46,7 @@ const Projects = () => {
                         return (
                             <OtherProject 
                                 title={proj.title}
+                                category={proj.category}
                                 description={proj.description}
                                 technologies={proj.technologies}
                                 git={proj.git}

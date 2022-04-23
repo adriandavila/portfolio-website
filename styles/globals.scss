@@ -35,6 +35,9 @@
 
   --proj-machine-learning: var(--pink);
   --proj-fullstack: var(--proj-agenderGreen);
+
+  // Misc
+  
 }
 
 
@@ -50,7 +53,7 @@ body {
   min-height: 100%;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--navy);
+  background-color: var(--dark-navy);
   color: var(--slate);
   font-family: var(--font-sans);
   font-size: var(--fz-xl);
@@ -267,14 +270,14 @@ a {
 // }
 
 .featured-project {
-  
   padding-block: 20px;
   color: var(--lightest-slate);
 
   .project-card {
     z-index: 5;
     width: 55%;
-    background-color: var(--proj-background);
+    background-color: var(--navy);
+    // background-color: var(--proj-background);
     border-top: 5px solid;
 
     .content {
@@ -309,18 +312,6 @@ a {
     }
   }  
 
-  .cta {
-    padding: 0.7em 0em;
-  }
-
-  a {
-    padding-inline-end: 1.3em;
-    svg {
-      width: 1.6em;
-      height: 1.6em;
-    }
-  }
-
   .fullstack {
     border-color: var(--proj-fullstack);
     h3 {
@@ -334,6 +325,8 @@ a {
       color: var(--proj-machine-learning);
     }
   }
+
+  
 }
 
 .right {
@@ -352,6 +345,38 @@ a {
     margin-left: -35px;
   }
 }
+
+.other-projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px 13px;
+  position: relative;
+}
+
+.card {
+  // background-color: var(--proj-background);
+  background-color: var(--navy);
+  border-top: 3px solid;
+  padding: 0em 1em;
+}
+
+.other-project {
+  .machine-learning {
+    border-color: var(--proj-machine-learning);
+    h3 {
+      color: var(--proj-machine-learning);
+    }
+  }
+
+  .fullstack {
+    border-color: var(--proj-fullstack);
+    h3 {
+      color: var(--proj-fullstack);
+    }
+  }
+}
+
+
 
 .card-styling {
   h3 {
@@ -373,7 +398,23 @@ a {
     padding-bottom: 0;
     margin-bottom: 0;
   }
+
+  a {
+    padding-inline-end: 1.3em;
+    svg {
+      width: 1.6em;
+      height: 1.6em;
+    }
+  }
+
+  .cta {
+    padding: 0.7em 0em;
+  }
+
+  
 }
+
+
 
 
 
@@ -397,15 +438,15 @@ a {
 
   a {
     padding: 0px 10px;
-    &:hover,
-    &:focus {
-      transform: translateY(-3px);
-    }
 
     svg {
       width: 30px;
       height: 30px;
       margin-bottom: 4px;
+      &:hover,
+    &:focus {
+      transform: translateY(-2px);
+    }
     }
   }
 

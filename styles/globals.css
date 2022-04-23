@@ -43,7 +43,7 @@ body {
   min-height: 100%;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--navy);
+  background-color: var(--dark-navy);
   color: var(--slate);
   font-family: var(--font-sans);
   font-size: var(--fz-xl);
@@ -234,7 +234,7 @@ a {
 .featured-project .project-card {
   z-index: 5;
   width: 55%;
-  background-color: var(--proj-background);
+  background-color: var(--navy);
   border-top: 5px solid;
 }
 .featured-project .project-card .content {
@@ -259,17 +259,6 @@ a {
 }
 .featured-project .project-image img {
   width: 100%;
-}
-.featured-project .cta {
-  padding: 0.7em 0em;
-}
-.featured-project a {
-  -webkit-padding-end: 1.3em;
-          padding-inline-end: 1.3em;
-}
-.featured-project a svg {
-  width: 1.6em;
-  height: 1.6em;
 }
 .featured-project .fullstack {
   border-color: var(--proj-fullstack);
@@ -301,6 +290,32 @@ a {
   margin-left: -35px;
 }
 
+.other-projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px 13px;
+  position: relative;
+}
+
+.card {
+  background-color: var(--navy);
+  border-top: 3px solid;
+  padding: 0em 1em;
+}
+
+.other-project .machine-learning {
+  border-color: var(--proj-machine-learning);
+}
+.other-project .machine-learning h3 {
+  color: var(--proj-machine-learning);
+}
+.other-project .fullstack {
+  border-color: var(--proj-fullstack);
+}
+.other-project .fullstack h3 {
+  color: var(--proj-fullstack);
+}
+
 .card-styling h3 {
   padding: 1em 0em 0em 0em;
   margin: 0;
@@ -317,6 +332,17 @@ a {
   font-size: 12pt;
   padding-bottom: 0;
   margin-bottom: 0;
+}
+.card-styling a {
+  -webkit-padding-end: 1.3em;
+          padding-inline-end: 1.3em;
+}
+.card-styling a svg {
+  width: 1.6em;
+  height: 1.6em;
+}
+.card-styling .cta {
+  padding: 0.7em 0em;
 }
 
 /* ------------- Experience ------------- */
@@ -335,13 +361,13 @@ a {
 .side-socials a {
   padding: 0px 10px;
 }
-.side-socials a:hover, .side-socials a:focus {
-  transform: translateY(-3px);
-}
 .side-socials a svg {
   width: 30px;
   height: 30px;
   margin-bottom: 4px;
+}
+.side-socials a svg:hover, .side-socials a svg:focus {
+  transform: translateY(-2px);
 }
 @media (max-width: 55em) {
   .side-socials {
