@@ -1,10 +1,18 @@
+General:
+- Reposition side socials & email further in from sides (reference Brit website for numbers)
+- Some quick animation on website load?
+- future goal: create themes (bright & airy, nature, neon, etc...)
+- make sure socials aren't squished at bottom on mobile
+- bug: hamburger menu not showing on mobile
+
 Home/Hero:
-- Fix navbar when resizing page
-- Change background
+- Fix navbar when resizing page - in particular, change the breakpoints
+- Create new background SVG & change background
 - Fix hero text positioning & styling
-- New logo
+- New logo & update in navbar
 - Link to resume (change in nav)
 - Animations on navbar upon website load
+- Use JS to disable animation when resizing page?
 
 !!! About
 !!! Experience
@@ -14,9 +22,14 @@ Projects:
 - Fix feature project styling for mobile & smaller screen sizes
 - Create archive (will require some routing - complicated!)
 - Limit "other projects" to 6, add "show more button" that limits to 12
+- display less "other projects" on mobile
+- add support for frontend, backend, data science projects
+- Fix my CSS & html classes (really messy atm, can reuse some of the styling, etc... just make more readable & robust)
+- go in and perfect the styling, spacing, etc...
 
 !!! Research
 !!! Contact
+!!! footer
 
 Config:
 - Actually fill in my...
