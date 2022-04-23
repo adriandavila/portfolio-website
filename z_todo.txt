@@ -3,7 +3,7 @@ General:
 - Some quick animation on website load?
 - future goal: create themes (bright & airy, nature, neon, etc...)
 - make sure socials aren't squished at bottom on mobile
-- bug: hamburger menu not showing on mobile
+- bug: hamburger menu not showing on mobile (has to do with style && color // background color I believe)
 
 Home/Hero:
 - Fix navbar when resizing page - in particular, change the breakpoints
@@ -19,13 +19,15 @@ Home/Hero:
 
 Projects:
 - Fix titles & subtitles
-- Fix feature project styling for mobile & smaller screen sizes
+- * Fix feature project styling for mobile & smaller screen sizes
 - Create archive (will require some routing - complicated!)
 - Limit "other projects" to 6, add "show more button" that limits to 12
 - display less "other projects" on mobile
+- add filters to "other projects"?
 - add support for frontend, backend, data science projects
 - Fix my CSS & html classes (really messy atm, can reuse some of the styling, etc... just make more readable & robust)
 - go in and perfect the styling, spacing, etc...
+- "other projects" - machine-learning tag => machine learning (without hyphen)
 
 !!! Research
 !!! Contact

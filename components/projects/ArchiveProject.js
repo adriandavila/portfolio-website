@@ -1,7 +1,10 @@
+import Icon from "../icons/icon"
 
 const ArchiveProject = () => {
   return (
-    <div>ArchiveProject</div>
+    <div className="archive-project">
+      <h1>ArchiveProject</h1>
+    </div>
   )
 }
 

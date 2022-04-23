@@ -43,6 +43,9 @@ module.exports = {
   //   - archived (will display in the archive)
   // Categories:
   //   - fullstack
+  //   - frontend
+  //   - backend
+  //   - data-science
   //   - machine-learning
   projects: [
     {
@@ -98,7 +101,7 @@ module.exports = {
     {
       type: 'displayed',
       title: 'displayed project 3',
-      category: 'fullstack',
+      category: 'frontend',
       description: "disp proj 3 desc",
       technologies: [],
       git: '',
@@ -108,7 +111,7 @@ module.exports = {
     {
       type: 'displayed',
       title: 'displayed project 4',
-      category: 'fullstack',
+      category: 'backend',
       description: "disp proj 4 desc",
       technologies: [],
       git: '',
@@ -118,7 +121,7 @@ module.exports = {
     {
       type: 'displayed',
       title: 'displayed project 5',
-      category: 'machine-learning',
+      category: 'data-science',
       description: "disp proj 5 desc",
       technologies: [],
       git: '',

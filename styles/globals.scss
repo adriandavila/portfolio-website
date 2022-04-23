@@ -35,6 +35,9 @@
 
   --proj-machine-learning: var(--pink);
   --proj-fullstack: var(--proj-agenderGreen);
+  --proj-frontend: var(--proj-transBlue);
+  --proj-backend: var(--proj-genderQueerPurple);
+  --proj-data-science: var(--proj-nonBinaryGold);
 
   // Misc
   
@@ -326,6 +329,26 @@ a {
     }
   }
 
+  .frontend {
+    border-color: var(--proj-frontend);
+    h3 {
+      color: var(--proj-frontend);
+    }
+  }
+
+  .backend {
+    border-color: var(--proj-backend);
+    h3 {
+      color: var(--proj-backend);
+    }
+  }
+
+  .data-science{
+    border-color: var(--proj-data-science);
+    h3 {
+      color: var(--proj-data-science);
+    }
+  }
   
 }
 
@@ -356,7 +379,7 @@ a {
 .card {
   // background-color: var(--proj-background);
   background-color: var(--navy);
-  border-top: 3px solid;
+  border-top: 1px solid;
   padding: 0em 1em;
 }
 
@@ -372,6 +395,27 @@ a {
     border-color: var(--proj-fullstack);
     h3 {
       color: var(--proj-fullstack);
+    }
+  }
+
+  .frontend {
+    border-color: var(--proj-frontend);
+    h3 {
+      color: var(--proj-frontend);
+    }
+  }
+
+  .backend {
+    border-color: var(--proj-backend);
+    h3 {
+      color: var(--proj-backend);
+    }
+  }
+
+  .data-science{
+    border-color: var(--proj-data-science);
+    h3 {
+      color: var(--proj-data-science);
     }
   }
 }

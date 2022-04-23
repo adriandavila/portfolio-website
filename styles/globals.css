@@ -32,6 +32,9 @@
   --proj-straightBlue: #0868AC;
   --proj-machine-learning: var(--pink);
   --proj-fullstack: var(--proj-agenderGreen);
+  --proj-frontend: var(--proj-transBlue);
+  --proj-backend: var(--proj-genderQueerPurple);
+  --proj-data-science: var(--proj-nonBinaryGold);
 }
 
 html,
@@ -272,6 +275,24 @@ a {
 .featured-project .machine-learning h3 {
   color: var(--proj-machine-learning);
 }
+.featured-project .frontend {
+  border-color: var(--proj-frontend);
+}
+.featured-project .frontend h3 {
+  color: var(--proj-frontend);
+}
+.featured-project .backend {
+  border-color: var(--proj-backend);
+}
+.featured-project .backend h3 {
+  color: var(--proj-backend);
+}
+.featured-project .data-science {
+  border-color: var(--proj-data-science);
+}
+.featured-project .data-science h3 {
+  color: var(--proj-data-science);
+}
 
 .right {
   display: flex;
@@ -299,7 +320,7 @@ a {
 
 .card {
   background-color: var(--navy);
-  border-top: 3px solid;
+  border-top: 1px solid;
   padding: 0em 1em;
 }
 
@@ -314,6 +335,24 @@ a {
 }
 .other-project .fullstack h3 {
   color: var(--proj-fullstack);
+}
+.other-project .frontend {
+  border-color: var(--proj-frontend);
+}
+.other-project .frontend h3 {
+  color: var(--proj-frontend);
+}
+.other-project .backend {
+  border-color: var(--proj-backend);
+}
+.other-project .backend h3 {
+  color: var(--proj-backend);
+}
+.other-project .data-science {
+  border-color: var(--proj-data-science);
+}
+.other-project .data-science h3 {
+  color: var(--proj-data-science);
 }
 
 .card-styling h3 {
