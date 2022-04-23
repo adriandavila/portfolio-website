@@ -7,9 +7,8 @@ const Research = () => {
     
     return (
         <div className="section-research">
-            <h1>04. Research</h1>
-           {featuredPapers && featuredPapers.map((paper, i) => {
-               return (
+            {featuredPapers && (<h1 className="section-title">04. Research</h1>)}
+            {featuredPapers && featuredPapers.map((paper, i) => (
                 <ResearchPaper 
                     title={paper.title}
                     authors={paper.authors}
@@ -20,8 +19,7 @@ const Research = () => {
                     image={paper.image}
                     key={i}
                 />
-               )
-           })}
+            ))}
         </div>
   )
 }

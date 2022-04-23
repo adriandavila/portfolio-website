@@ -116,6 +116,31 @@ a {
 }
 
 
+.contact-title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+
+  // h1 styling
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-weight: 100;
+  font-size: var(--fs, 12pt);
+  color: var(--green);
+
+  &:before, &:after {
+    content: '';
+    display: block;
+    position: relative;
+    height: 1px;
+    background: var(--dark-slate);
+    width: 35%;
+    margin-inline: 2em;
+  }
+}
+
 /* ------------- Navigation ------------- */
 .primary-header {
   margin: 0;
@@ -465,8 +490,8 @@ a {
 .research-paper {
   display: flex;
   align-content: center;
-  padding-bottom: 15px;
-  
+  padding-bottom: 12px;
+
   .paper-image {
     img {
       height: 125px;
@@ -529,7 +554,41 @@ a {
 
 
 /* ------------- Contact ------------- */
+.section-contact {
+  padding-top: 15vh;
+  padding-bottom: 30vh;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
+  
+
+  h2 {
+    margin: 0;
+    padding-top: 0.1em;
+    padding-bottom: 0.2em;
+    font-size: 40pt;
+    color: var(--lightest-slate);
+  }
+
+  p {
+    width: 52%;
+    color: var(--light-slate);
+    font-family: var(--font-sans);
+    padding-bottom: 3.5em;
+  }
+
+  a {
+    margin: 0.5em;
+  }
+
+}
+
+
+/* ------------- Footer ------------- */
 
 
 

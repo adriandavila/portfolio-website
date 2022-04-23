@@ -183,17 +183,22 @@ module.exports = {
   /* ------------- MY SOCIALS ------------- */
   email: 'a4davila@uwaterloo.ca',
   socialMedia: [
-      {
-        name: 'GitHub',
-        url: 'https://github.com/adriandavila',
-      },
-      {
-        name: 'Linkedin',
-        url: 'https://www.linkedin.com/in/adriandavila1/',
-      },
-      {
-          name: 'Instagram',
-          url: 'https://www.instagram.com/adrian.davila_/',
-      },
-    ],
+    {
+      name: 'GitHub',
+      url: 'https://github.com/adriandavila',
+    },
+    {
+      name: 'Linkedin',
+      url: 'https://www.linkedin.com/in/adriandavila1/',
+    },
+    {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/adrian.davila_/',
+    },
+  ],
+
+  /* ------------- CONTACT ------------- */
+  contact: {
+    message: "Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!",
+  },
 }

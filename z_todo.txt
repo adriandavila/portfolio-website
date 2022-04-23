@@ -27,11 +27,12 @@ Projects:
 - Fix my CSS & html classes (really messy atm, can reuse some of the styling, etc... just make more readable & robust)
 - go in and perfect the styling, spacing, etc...
 - "other projects" - machine-learning tag => machine learning (without hyphen)
+- Pick more vibrant colors for the various tags
 
 Research:
-- Styling
-- Work out details of how I want to display the details of the paper
-
+- Styling the text
+- Work out details of how I want to display the details of the paper (I'm thinking maybe just put the citation)
+- Create research archive page?
 
 !!! Contact
 !!! footer
