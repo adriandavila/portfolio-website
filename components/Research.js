@@ -8,18 +8,20 @@ const Research = () => {
     return (
         <div className="section-research">
             {featuredPapers && (<h1 className="section-title">04. Research</h1>)}
-            {featuredPapers && featuredPapers.map((paper, i) => (
-                <ResearchPaper 
-                    title={paper.title}
-                    authors={paper.authors}
-                    date={paper.date}
-                    desc={paper.desc}
-                    pdf={paper.pdf}
-                    doi={paper.doi}
-                    image={paper.image}
-                    key={i}
-                />
-            ))}
+            <ul className="research-list">
+                {featuredPapers && featuredPapers.map((paper, i) => (
+                    <li key={i}><ResearchPaper 
+                        title={paper.title}
+                        authors={paper.authors}
+                        date={paper.date}
+                        desc={paper.desc}
+                        pdf={paper.pdf}
+                        doi={paper.doi}
+                        image={paper.image}
+                    /></li>
+                ))}
+            </ul>
+            
         </div>
   )
 }

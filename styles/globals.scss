@@ -464,6 +464,15 @@ a {
 
 /* ------------- Research ------------- */
 
+.research-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  * {
+    margin: 0;
+    padding: 0;
+  }
+}
 .research-paper {
   display: flex;
   align-content: center;
@@ -555,9 +564,15 @@ a {
     margin-inline: 2em;
   }
 
-  @media (max-width: 55em) {
+  @media (max-width: 35em) {
     &:before, &:after {
-      width: clamp(10%, 5vh, 35%);
+      width: 0px;
+    }
+  }
+
+  @media (min-width: 35em) and (max-width: 80em) {
+    &:before, &:after {
+      width: clamp(15%, 10vw, 35%);
     }
   }
 }

@@ -1,4 +1,4 @@
-import { contact } from "../config"
+import { email, resume, contact } from "../config"
 
 const Contact = () => {
   return (
@@ -8,8 +8,8 @@ const Contact = () => {
         <p>{contact.message}</p>
 
         <div className="cta">
-          <a href="" className="green-button">View my resume</a>
-          <a href="" className="green-button">Send me an email</a>
+          <a href={resume} className="green-button">View my resume</a>
+          <a href={"mailto:"+email} className="green-button">Send me an email</a>
         </div>
     </div>
   )
