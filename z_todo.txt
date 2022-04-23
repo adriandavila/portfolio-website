@@ -2,8 +2,6 @@ General:
 - Reposition side socials & email further in from sides (reference Brit website for numbers)
 - Some quick animation on website load?
 - future goal: create themes (bright & airy, nature, neon, etc...)
-- make sure socials aren't squished at bottom on mobile
-- bug: hamburger menu not showing on mobile (has to do with style && color // background color I believe)
 
 Home/Hero:
 - Fix navbar when resizing page - in particular, change the breakpoints
@@ -34,7 +32,13 @@ Research:
 - Work out details of how I want to display the details of the paper (I'm thinking maybe just put the citation)
 - Create research archive page?
 
-!!! Contact
+Contact:
+- Do I like the design? 
+- Fix padding // margin
+- Update links to resume & email
+- fix mobile css
+
+
 !!! footer
 
 Config:
@@ -43,3 +47,13 @@ Config:
     - Experience
     - Projects
     - Research
+    - Message
+
+Testing:
+- Performance testing
+- Functional testing
+- Compatability testing
+
+Deploy:
+- Buy domain & host website somewhere
+- Add website link to resume, github (in my readme), linkedin

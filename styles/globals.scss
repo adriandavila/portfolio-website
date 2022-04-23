@@ -116,30 +116,7 @@ a {
 }
 
 
-.contact-title {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
 
-  // h1 styling
-  margin: 0;
-  padding: 0;
-  font-family: var(--font-mono);
-  font-weight: 100;
-  font-size: var(--fs, 12pt);
-  color: var(--green);
-
-  &:before, &:after {
-    content: '';
-    display: block;
-    position: relative;
-    height: 1px;
-    background: var(--dark-slate);
-    width: 35%;
-    margin-inline: 2em;
-  }
-}
 
 /* ------------- Navigation ------------- */
 .primary-header {
@@ -554,6 +531,37 @@ a {
 
 
 /* ------------- Contact ------------- */
+.contact-title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+
+  // h1 styling
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-weight: 100;
+  font-size: var(--fs, 12pt);
+  color: var(--green);
+
+  &:before, &:after {
+    content: '';
+    display: block;
+    position: relative;
+    height: 1px;
+    background: var(--dark-slate);
+    width: 35%;
+    margin-inline: 2em;
+  }
+
+  @media (max-width: 55em) {
+    &:before, &:after {
+      width: clamp(10%, 5vh, 35%);
+    }
+  }
+}
+
 .section-contact {
   padding-top: 15vh;
   padding-bottom: 30vh;
@@ -581,11 +589,29 @@ a {
     padding-bottom: 3.5em;
   }
 
+  @media (max-width: 55em) {
+
+    padding-bottom: 10vh;
+
+    p {
+      width: 100%;
+      padding: 0 0 2vh 0;
+    }
+
+    .cta {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   a {
     margin: 0.5em;
   }
 
 }
+
+
 
 
 /* ------------- Footer ------------- */
@@ -673,7 +699,8 @@ a {
 
     a {
       writing-mode: horizontal-tb;
-      padding: 0;
+      padding-top: 0;
+      padding-bottom: 1.2em;
       margin: 0;
     }
   }
