@@ -22,6 +22,16 @@
   --ham-before-active: top 0.1s ease-out,opacity 0.1s ease-out 0.12s;
   --ham-after: bottom 0.1s ease-in 0.25s,transform 0.22s cubic-bezier(0.55,0.055,0.675,0.19);
   --ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,0.355,1) 0.12s;
+  --proj-background: #140E1A;
+  --proj-grey: #303436;
+  --proj-transBlue: #5BCEFA;
+  --proj-genderQueerPurple: #B57EDC;
+  --proj-transPink: #F5A9B8;
+  --proj-nonBinaryGold: #F4D06F;
+  --proj-agenderGreen: #A2FAA3;
+  --proj-straightBlue: #0868AC;
+  --proj-machine-learning: var(--pink);
+  --proj-fullstack: var(--proj-agenderGreen);
 }
 
 html,
@@ -51,7 +61,7 @@ a {
 }
 
 .main-container {
-  padding-inline: clamp(25px, 7vw, 100px);
+  padding-inline: clamp(13%, 7vw, 100px);
 }
 
 /* Background Image on Homepage */
@@ -70,6 +80,18 @@ a {
 }
 .underline-indicators > * .active, .underline-indicators > *[aria-selected=true] {
   border-color: rgb(230, 241, 255);
+}
+
+/* ------------- General Use ------------- */
+.green-button {
+  color: var(--green);
+  background-color: transparent;
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  padding: 0.75rem 1.25rem;
+  font-family: var(--font-mono);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* ------------- Navigation ------------- */
@@ -165,17 +187,6 @@ a {
     background-image: url("../public/icon-close.svg");
   }
 }
-.green-button {
-  color: var(--green);
-  background-color: transparent;
-  border: 1px solid var(--green);
-  border-radius: 4px;
-  padding: 0.75rem 1.25rem;
-  font-family: var(--font-mono);
-  text-decoration: none;
-  cursor: pointer;
-}
-
 @media (min-width: 35em) and (max-width: 55em) {
   .primary-navigation a > span[aria-hidden] {
     display: none;
@@ -214,7 +225,100 @@ a {
   padding-inline: clamp(25px, 7vw, 100px);
 }
 
+/* ------------- Experience ------------- */
 /* ------------- Projects ------------- */
+.featured-project {
+  padding-block: 20px;
+  color: var(--lightest-slate);
+}
+.featured-project .project-card {
+  z-index: 5;
+  width: 55%;
+  background-color: var(--proj-background);
+  border-top: 5px solid;
+}
+.featured-project .project-card .content {
+  padding: 0.2em 1.5em 0.5em 1.5em;
+}
+.featured-project .project-card .technologies {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.featured-project .project-card .technologies li {
+  padding-top: 1.5em;
+  padding-right: 1em;
+  font-family: var(--font-mono);
+  font-size: 11pt;
+  color: var(--light-slate);
+}
+.featured-project .project-image {
+  width: 100vh;
+  z-index: 0;
+}
+.featured-project .project-image img {
+  width: 100%;
+}
+.featured-project .cta {
+  padding: 0.7em 0em;
+}
+.featured-project a {
+  -webkit-padding-end: 1.3em;
+          padding-inline-end: 1.3em;
+}
+.featured-project a svg {
+  width: 1.6em;
+  height: 1.6em;
+}
+.featured-project .fullstack {
+  border-color: var(--proj-fullstack);
+}
+.featured-project .fullstack h3 {
+  color: var(--proj-fullstack);
+}
+.featured-project .machine-learning {
+  border-color: var(--proj-machine-learning);
+}
+.featured-project .machine-learning h3 {
+  color: var(--proj-machine-learning);
+}
+
+.right {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.right .project-image {
+  margin-right: -35px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+.left .project-image {
+  margin-left: -35px;
+}
+
+.card-styling h3 {
+  padding: 1em 0em 0em 0em;
+  margin: 0;
+  color: var(--proj-agenderGreen);
+  font-size: 11pt;
+}
+.card-styling h2 {
+  padding: 0;
+  margin: 0;
+  color: var(--white);
+  font-size: 20pt;
+}
+.card-styling p {
+  font-size: 12pt;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 /* ------------- Experience ------------- */
 /* ------------- Side Social List ------------- */
 .side-socials {
