@@ -146,8 +146,30 @@ module.exports = {
   //   - archived (will display in the archive)
   research: [
     {
-      type: 'featured',
-      title: "",
+      category: 'featured',
+      title: "research paper 1",
+      authors: ["Adrian Davila", "Edith Law", "Ken Jen"],
+      date: "May 2022",
+      desc: "Accepted to 31st HCI conference",
+      abstract: "",
+      pdf: '',
+      doi: '',
+      image: '/research-images/sample-research-image-1.png',
+    },
+    {
+      category: 'featured',
+      title: "research paper 2",
+      authors: ["Ken Jen", "Adrian Davila"],
+      date: "June 2022",
+      desc: "Accepted to 30th HCI conference",
+      abstract: "",
+      pdf: '',
+      doi: '',
+      image: '/research-images/sample-research-image-1.png',
+    },
+    {
+      category: 'archived',
+      title: "paper 3",
       authors: [],
       date: "",
       desc: "",

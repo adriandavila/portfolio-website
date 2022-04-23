@@ -460,9 +460,75 @@ a {
 
 
 
+/* ------------- Research ------------- */
+
+.research-paper {
+  display: flex;
+  align-content: center;
+  padding-bottom: 15px;
+  
+  .paper-image {
+    img {
+      height: 125px;
+    }
+  }
+
+  @media (max-width: 55em) {
+
+    .paper-image {
+      visibility: hidden;
+      width: 0px;
+    }
+  }
+
+  .paper-content {
+    padding-left: 15px;
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    h1 {
+
+      color: turquoise;
+    }
+  
+    h2{
+
+      color: turquoise;
+    }
+  
+    h3 {
+
+      color: turquoise;
+    }
+  
+    p {
+      color: turquoise;
+    }
+  
+    ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+  
+      li {
+        padding-inline-end: 1em;
+      }
+
+      li[author="Adrian Davila"] {
+        color: red;
+      }
+    }
+  }
+}
 
 
-/* ------------- Experience ------------- */
+
+
+
+/* ------------- Contact ------------- */
 
 
 
