@@ -40,7 +40,11 @@
   --proj-data-science: var(--proj-nonBinaryGold);
 
   // Misc
-  
+
+  // Breakpoints
+  --breakpoint-large: 75em;
+  --breakpoint-medium: 55em;
+  --breakpoint-small: 35em;
 }
 
 
@@ -188,7 +192,7 @@ a {
   visibility: hidden;
 }
 
-@media (max-width: 35em) {
+@media (max-width: 55em) {
   .primary-navigation {
     --gap: 2em;
 
@@ -223,21 +227,22 @@ a {
   }
 }
 
-@media (min-width: 35em) and (max-width: 55em) {
+@media (min-width: 55em) and (max-width: 70em) {
   .primary-navigation a > span[aria-hidden] {
     display: none;
   }
 }
 
-@media (min-width: 35em) {
+@media (min-width: 55em) {
   .primary-navigation {
     --gap: clamp(1.5rem, 5vw, 3rem);
     padding-block: 0rem;
+    margin-block: 1.75rem;
     padding-inline: clamp(3rem, 6vw, 7rem);
   }
 }
 
-@media (min-width: 55em) {
+@media (min-width: 70em) {
   .primary-header::after {
     content: '';
     display: block;
@@ -253,9 +258,9 @@ a {
     order: 2;
   }
 
-  .primary-navigation {
-    margin-block: 1.75rem;
-  }
+  // .primary-navigation {
+  //   margin-block: 1.75rem;
+  // }
 }
 
 /* ------------- Hero ------------- */
@@ -269,11 +274,6 @@ a {
 
 
 /* ------------- Projects ------------- */
-
-// .section-projects {
-//   padding-inline: 7%;
-// }
-
 .featured-project {
   padding-block: 20px;
   color: var(--lightest-slate);
@@ -422,8 +422,6 @@ a {
   }
 }
 
-
-
 .card-styling {
   h3 {
     padding: 1em 0em 0em 0em;
@@ -473,6 +471,7 @@ a {
     padding: 0;
   }
 }
+
 .research-paper {
   display: flex;
   align-content: center;
@@ -625,9 +624,6 @@ a {
   }
 
 }
-
-
-
 
 /* ------------- Footer ------------- */
 

@@ -35,6 +35,9 @@
   --proj-frontend: var(--proj-transBlue);
   --proj-backend: var(--proj-genderQueerPurple);
   --proj-data-science: var(--proj-nonBinaryGold);
+  --breakpoint-large: 75em;
+  --breakpoint-medium: 55em;
+  --breakpoint-small: 35em;
 }
 
 html,
@@ -160,7 +163,7 @@ a {
   visibility: hidden;
 }
 
-@media (max-width: 35em) {
+@media (max-width: 55em) {
   .primary-navigation {
     --gap: 2em;
     position: fixed;
@@ -190,19 +193,20 @@ a {
     background-image: url("../public/icon-close.svg");
   }
 }
-@media (min-width: 35em) and (max-width: 55em) {
+@media (min-width: 55em) and (max-width: 70em) {
   .primary-navigation a > span[aria-hidden] {
     display: none;
   }
 }
-@media (min-width: 35em) {
+@media (min-width: 55em) {
   .primary-navigation {
     --gap: clamp(1.5rem, 5vw, 3rem);
     padding-block: 0rem;
+    margin-block: 1.75rem;
     padding-inline: clamp(3rem, 6vw, 7rem);
   }
 }
-@media (min-width: 55em) {
+@media (min-width: 70em) {
   .primary-header::after {
     content: "";
     display: block;
@@ -216,10 +220,6 @@ a {
 
   nav {
     order: 2;
-  }
-
-  .primary-navigation {
-    margin-block: 1.75rem;
   }
 }
 /* ------------- Hero ------------- */
