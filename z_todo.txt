@@ -15,15 +15,12 @@ Home/Hero:
 !!! Experience
 
 Projects:
-- Fix titles & subtitles
-- * Fix feature project styling for mobile & smaller screen sizes
 - Create archive (will require some routing - complicated!)
 - Limit "other projects" to 6, add "show more button" that limits to 12
 - display less "other projects" on mobile
 - add filters to "other projects"? !advanced
 - perfect the styling, spacing, etc...
 - "other projects" - machine-learning tag => machine learning (without hyphen)
-- Pick more vibrant colors for the various tags
 
 Research:
 - Styling the text

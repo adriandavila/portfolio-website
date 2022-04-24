@@ -33,11 +33,12 @@
   --proj-agenderGreen: #A2FAA3;
   --proj-straightBlue: #0868AC;
 
-  --proj-machine-learning: var(--pink);
-  --proj-fullstack: var(--proj-agenderGreen);
-  --proj-frontend: var(--proj-transBlue);
-  --proj-backend: var(--proj-genderQueerPurple);
-  --proj-data-science: var(--proj-nonBinaryGold);
+  // FD2155
+  --proj-machine-learning: #FF00E4;
+  --proj-fullstack: #06FF00;
+  --proj-frontend: #08fdd8;
+  --proj-backend: yellow;
+  --proj-data-science: orange;
 
   // Breakpoints
   --breakpoint-large: 75em;
