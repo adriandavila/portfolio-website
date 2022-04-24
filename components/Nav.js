@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { resume } from '../config';
 
 
 // Nav component
@@ -77,12 +78,12 @@ const Nav = () => {
                     </a>
                 </li>
                 <li aria-selected={contactSelected}>
-                    <a href="/#contacct" onClick={handleSelectContact} className="letter-spacing-2">
+                    <a href="/#contact" onClick={handleSelectContact} className="letter-spacing-2">
                         <span aria-hidden="true">05.</span>Contact
                     </a>
                 </li>
                 <li className="special">
-                    <a className="green-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                    <a className="green-button" href={resume} target="_blank" rel="noopener noreferrer">Resume</a>
                 </li>
             </ul>
         </nav>

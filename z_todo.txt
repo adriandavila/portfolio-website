@@ -1,5 +1,4 @@
 General:
-- Reposition side socials & email further in from sides (reference Brit website for numbers)
 - Some quick animation on website load?
 - future goal: create themes (bright & airy, nature, neon, etc...)
 - section title styling
@@ -8,7 +7,6 @@ Home/Hero:
 - Create new background SVG & change background
 - Fix hero text positioning & styling
 - New logo & update in navbar
-- Link to resume (change in nav)
 - Animations on navbar upon website load
 - Use JS to disable animation when resizing page?
 
