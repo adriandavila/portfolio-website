@@ -21,8 +21,7 @@ Projects:
 - Limit "other projects" to 6, add "show more button" that limits to 12
 - display less "other projects" on mobile
 - add filters to "other projects"? !advanced
-- Fix my CSS & html classes (really messy atm, can reuse some of the styling, etc... just make more readable & robust)
-- go in and perfect the styling, spacing, etc...
+- perfect the styling, spacing, etc...
 - "other projects" - machine-learning tag => machine learning (without hyphen)
 - Pick more vibrant colors for the various tags
 

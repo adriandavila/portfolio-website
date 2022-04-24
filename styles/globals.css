@@ -235,14 +235,16 @@ a {
   display: flex;
   align-items: center;
 }
-.featured-project.right {
-  flex-direction: row-reverse;
-}
-.featured-project.right .project-image {
-  margin-right: -35px;
-}
-.featured-project.left .project-image {
-  margin-left: -35px;
+@media (min-width: 55em) {
+  .featured-project.right {
+    flex-direction: row-reverse;
+  }
+  .featured-project.right .project-image {
+    margin-right: -35px;
+  }
+  .featured-project.left .project-image {
+    margin-left: -35px;
+  }
 }
 .featured-project .project-card {
   z-index: 5;
@@ -346,6 +348,22 @@ a {
   color: var(--proj-data-science);
 }
 
+@media (max-width: 55em) {
+  .featured-project {
+    flex-direction: column;
+  }
+  .featured-project.right, .featured-project.left {
+    flex-direction: column;
+  }
+  .featured-project .project-card {
+    width: 100%;
+    order: 2;
+  }
+  .featured-project .project-image {
+    width: 100%;
+    order: 1;
+  }
+}
 /* ------------- Research ------------- */
 .research-list {
   list-style: none;

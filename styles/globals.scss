@@ -272,16 +272,18 @@ a {
   align-items: center;
 
 
-  &.right {
-    flex-direction: row-reverse;
-    .project-image {
-      margin-right: -35px;
+  @media (min-width: 55em) {
+    &.right {
+      flex-direction: row-reverse;
+      .project-image {
+        margin-right: -35px;
+      }
     }
-  }
-
-  &.left {
-    .project-image {
-      margin-left: -35px;
+  
+    &.left {
+      .project-image {
+        margin-left: -35px;
+      }
     }
   }
 
@@ -402,6 +404,26 @@ a {
     border-color: var(--proj-data-science);
     h3 {
       color: var(--proj-data-science);
+    }
+  }
+}
+
+@media (max-width: 55em) {
+  .featured-project {
+    flex-direction: column;
+
+    &.right, &.left {
+      flex-direction: column;
+    }
+
+    .project-card {
+      width: 100%;
+      order: 2;
+    }
+
+    .project-image {
+      width: 100%;
+      order: 1;
     }
   }
 }
