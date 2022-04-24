@@ -2,8 +2,8 @@ import Icon from "../icons/icon"
 
 const OtherProject = ({title, category, description, technologies, git, live, image}) => {
   return (
-    <div className="other-project card-styling">
-      <div className={"card " + category}>
+    <div className="project card-styling">
+      <div className={"other-card " + category}>
         <div className="content">
           <h3>{category}</h3>
           <h2>{title}</h2>

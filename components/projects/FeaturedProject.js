@@ -3,7 +3,7 @@ import Icon from '../icons/icon.js'
 const FeaturedProject = ({title, category, description, technologies, git, live, image, left}) => {
     const leftOrRight = (left ? "left" : "right");
   return (
-    <div className={"featured-project " + leftOrRight}>
+    <div className={"project featured-project " + leftOrRight}>
         <div className={"project-card card-styling " + category}>
             <div className="content">
                 <h3>Featured Project</h3>

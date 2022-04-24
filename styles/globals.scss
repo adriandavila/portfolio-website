@@ -39,15 +39,11 @@
   --proj-backend: var(--proj-genderQueerPurple);
   --proj-data-science: var(--proj-nonBinaryGold);
 
-  // Misc
-
   // Breakpoints
   --breakpoint-large: 75em;
   --breakpoint-medium: 55em;
   --breakpoint-small: 35em;
 }
-
-
 
 html,
 body {
@@ -69,7 +65,6 @@ body {
   overflow-x: hidden;
 }
 
-
 a {
   color: inherit;
   text-decoration: none;
@@ -84,26 +79,9 @@ a {
 }
 
 /* Background Image on Homepage */
-
 .home {
   background-image: url('../public/background-home-desktop.jpg');
   background-repeat: no-repeat;
-}
-
-/* Underline Indicators */
-.underline-indicators > * {
-  padding: var(--underline-gap, 1rem) 0;
-  border-bottom: .2rem solid rgba(230, 241, 255, 0);
-
-  &:hover,
-  &:focus {
-    border-color: rgba(230, 241, 255, 0.5);
-  }
-
-  .active,
-  &[aria-selected="true"] {
-    border-color: rgba(230, 241, 255, 1);
-  }
 }
 
 /* ------------- General Use ------------- */
@@ -119,8 +97,20 @@ a {
   cursor: pointer;  
 }
 
+.underline-indicators > * {
+  padding: var(--underline-gap, 1rem) 0;
+  border-bottom: .2rem solid rgba(230, 241, 255, 0);
 
+  &:hover,
+  &:focus {
+    border-color: rgba(230, 241, 255, 0.5);
+  }
 
+  .active,
+  &[aria-selected="true"] {
+    border-color: rgba(230, 241, 255, 1);
+  }
+}
 
 /* ------------- Navigation ------------- */
 .primary-header {
@@ -278,6 +268,24 @@ a {
   padding-block: 20px;
   color: var(--lightest-slate);
 
+  display: flex;
+  align-items: center;
+
+
+  &.right {
+    flex-direction: row-reverse;
+    .project-image {
+      margin-right: -35px;
+    }
+  }
+
+  &.left {
+    .project-image {
+      margin-left: -35px;
+    }
+  }
+
+
   .project-card {
     z-index: 5;
     width: 55%;
@@ -293,8 +301,6 @@ a {
       list-style: none;
       margin: 0;
       padding: 0;
-      
-
       display: flex;
 
       li {
@@ -304,71 +310,16 @@ a {
         font-size: 11pt;
         color: var(--light-slate);
       }
-
     }
   }  
 
   .project-image {
     width: 100vh;
-    // margin-left: -35px;
     z-index: 0;
     img {
       width: 100%;
     }
   }  
-
-  .fullstack {
-    border-color: var(--proj-fullstack);
-    h3 {
-      color: var(--proj-fullstack);
-    }
-  }
-
-  .machine-learning {
-    border-color: var(--proj-machine-learning);
-    h3 {
-      color: var(--proj-machine-learning);
-    }
-  }
-
-  .frontend {
-    border-color: var(--proj-frontend);
-    h3 {
-      color: var(--proj-frontend);
-    }
-  }
-
-  .backend {
-    border-color: var(--proj-backend);
-    h3 {
-      color: var(--proj-backend);
-    }
-  }
-
-  .data-science{
-    border-color: var(--proj-data-science);
-    h3 {
-      color: var(--proj-data-science);
-    }
-  }
-  
-}
-
-.right {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  .project-image {
-    margin-right: -35px;
-  }
-}
-
-.left {
-  display: flex;
-  align-items: center;
-  .project-image {
-    margin-left: -35px;
-  }
 }
 
 .other-projects-list {
@@ -378,51 +329,13 @@ a {
   position: relative;
 }
 
-.card {
-  // background-color: var(--proj-background);
-  background-color: var(--navy);
-  border-top: 1px solid;
-  padding: 0em 1em;
-}
-
-.other-project {
-  .machine-learning {
-    border-color: var(--proj-machine-learning);
-    h3 {
-      color: var(--proj-machine-learning);
-    }
-  }
-
-  .fullstack {
-    border-color: var(--proj-fullstack);
-    h3 {
-      color: var(--proj-fullstack);
-    }
-  }
-
-  .frontend {
-    border-color: var(--proj-frontend);
-    h3 {
-      color: var(--proj-frontend);
-    }
-  }
-
-  .backend {
-    border-color: var(--proj-backend);
-    h3 {
-      color: var(--proj-backend);
-    }
-  }
-
-  .data-science{
-    border-color: var(--proj-data-science);
-    h3 {
-      color: var(--proj-data-science);
-    }
-  }
-}
-
 .card-styling {
+  .other-card {
+    background-color: var(--navy);
+    border-top: 1px solid;
+    padding: 0em 1em;
+  }
+
   h3 {
     padding: 1em 0em 0em 0em;
     margin: 0;
@@ -453,15 +366,47 @@ a {
 
   .cta {
     padding: 0.7em 0em;
-  }
-
-  
+  }  
 }
 
+.project {
+  .fullstack {
+    border-color: var(--proj-fullstack);
+    h3 {
+      color: var(--proj-fullstack);
+    }
+  }
 
+  .machine-learning {
+    border-color: var(--proj-machine-learning);
+    h3 {
+      color: var(--proj-machine-learning);
+    }
+  }
+
+  .frontend {
+    border-color: var(--proj-frontend);
+    h3 {
+      color: var(--proj-frontend);
+    }
+  }
+
+  .backend {
+    border-color: var(--proj-backend);
+    h3 {
+      color: var(--proj-backend);
+    }
+  }
+
+  .data-science{
+    border-color: var(--proj-data-science);
+    h3 {
+      color: var(--proj-data-science);
+    }
+  }
+}
 
 /* ------------- Research ------------- */
-
 .research-list {
   list-style: none;
   padding: 0;
@@ -533,10 +478,6 @@ a {
     }
   }
 }
-
-
-
-
 
 /* ------------- Contact ------------- */
 .contact-title {
@@ -732,6 +673,3 @@ a {
     }  
   }
 }
-
-
-
