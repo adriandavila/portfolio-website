@@ -6,6 +6,12 @@ module.exports = {
     paragraph: "Note: I want to create for myself a similar background as this: https://gridcritters.com/ - (I also have a screenshot on my desktop). Can also use this galaxy possibly: https://adobe.ly/3rFvtLJ . Will use same text I have from Brittany Chang Website. Desired navbar: https://www.youtube.com/watch?v=HbBMp6yUXO0",
   },
 
+  /* ------------- ABOUT ME ------------- */
+  about: {
+    desc: "",
+    technologies: [],
+  },
+
   /* ------------- MY SOCIALS ------------- */
   email: 'a4davila@uwaterloo.ca',
   resume: '',
@@ -169,17 +175,6 @@ module.exports = {
       authors: "P. Ravari, K. J. Lee, E. Law, and D. Kulic.",
       date: "May 2022",
       desc: "Accepted for the 30th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN'21).",
-      abstract: "",
-      pdf: '',
-      doi: '',
-      image: '/research-images/sample-research-image-1.png',
-    },
-    {
-      category: 'featured',
-      title: "",
-      authors: 'J. Ceha, K. J. Lee, E. Nilsen, J. Goh and E. Law. "Can a Humorous Conversational Agent Enhance Learning Experience and Outcomes?" In CHI Conference on Human Factors in Computing Systems (CHI ’21). Best Paper Honorable Mention',
-      date: "",
-      desc: "",
       abstract: "",
       pdf: '',
       doi: '',
