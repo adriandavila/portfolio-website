@@ -449,7 +449,6 @@ a {
 
 .research-paper {
   display: flex;
-  align-content: center;
   padding-bottom: 12px;
 
   .paper-image {
@@ -474,22 +473,38 @@ a {
     }
 
     h1 {
-
-      color: turquoise;
+      color: var(--white);
+      font-size: 16pt;
     }
-  
-    h2{
-
-      color: turquoise;
+    
+    .authors {
+      color: var(--lightest-slate);
     }
+
   
     h3 {
+      display: flex;
+      align-items: center;
+      color: var(--lightest-slate);
+      font-weight: 300;
+      font-size: 12pt;
 
-      color: turquoise;
+      &:before {
+        content: '';
+        display: block;
+        position: relative;
+        height: 20px;
+        background: var(--slate);
+        width: 1px;
+        margin-inline: 0.7em;
+      }
     }
-  
     p {
-      color: turquoise;
+      display: flex;
+    }
+    .desc {
+      margin-top: 1vh;
+      color: var(--lightest-slate);
     }
   
     ul {
@@ -503,11 +518,13 @@ a {
       }
 
       li[author="Adrian Davila"] {
-        color: red;
+        font-weight: 700;
       }
     }
   }
 }
+
+
 
 /* ------------- Contact ------------- */
 .contact-title {

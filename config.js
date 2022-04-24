@@ -165,10 +165,10 @@ module.exports = {
   research: [
     {
       category: 'featured',
-      title: "research paper 1",
-      authors: ["Adrian Davila", "Edith Law", "Ken Jen"],
+      title: "Effects of an Adaptive Robot Encouraging Teamwork on Students' Learning",
+      authors: "P. Ravari, K. J. Lee, E. Law, and D. Kulic.",
       date: "May 2022",
-      desc: "Accepted to 31st HCI conference",
+      desc: "Accepted for the 30th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN'21).",
       abstract: "",
       pdf: '',
       doi: '',
@@ -176,10 +176,10 @@ module.exports = {
     },
     {
       category: 'featured',
-      title: "research paper 2",
-      authors: ["Ken Jen", "Adrian Davila"],
-      date: "June 2022",
-      desc: "Accepted to 30th HCI conference",
+      title: "",
+      authors: 'J. Ceha, K. J. Lee, E. Nilsen, J. Goh and E. Law. "Can a Humorous Conversational Agent Enhance Learning Experience and Outcomes?" In CHI Conference on Human Factors in Computing Systems (CHI ’21). Best Paper Honorable Mention',
+      date: "",
+      desc: "",
       abstract: "",
       pdf: '',
       doi: '',
@@ -188,7 +188,7 @@ module.exports = {
     {
       category: 'archived',
       title: "paper 3",
-      authors: [],
+      authors: "",
       date: "",
       desc: "",
       abstract: "",
