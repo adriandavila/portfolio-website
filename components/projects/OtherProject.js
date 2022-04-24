@@ -1,11 +1,21 @@
 import Icon from "../icons/icon"
 
 const OtherProject = ({title, category, description, technologies, git, live, image}) => {
+  const categoryToTag = (cat) => {
+    if (cat == 'machine-learning') {
+      return 'machine learning';
+    } else if (cat == 'data-science') {
+      return 'data science';
+    } else {
+      return cat;
+    }
+  }
+  
   return (
     <div className="project card-styling">
       <div className={"other-card " + category}>
         <div className="content">
-          <h3>{category}</h3>
+          <h3>{categoryToTag(category)}</h3>
           <h2>{title}</h2>
           <p>{description}</p>
 

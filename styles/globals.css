@@ -30,7 +30,7 @@
   --proj-nonBinaryGold: #F4D06F;
   --proj-agenderGreen: #A2FAA3;
   --proj-straightBlue: #0868AC;
-  --proj-machine-learning: #FF00E4;
+  --proj-machine-learning: #F037A5;
   --proj-fullstack: #06FF00;
   --proj-frontend: #08fdd8;
   --proj-backend: yellow;
@@ -38,6 +38,7 @@
   --breakpoint-large: 75em;
   --breakpoint-medium: 55em;
   --breakpoint-small: 35em;
+  --side-element-padding: 1.7em;
 }
 
 html,
@@ -227,6 +228,7 @@ a {
   padding-inline: clamp(25px, 7vw, 100px);
 }
 
+/* ------------- About ------------- */
 /* ------------- Experience ------------- */
 /* ------------- Projects ------------- */
 .featured-project {
@@ -533,6 +535,9 @@ a {
   }
 }
 @media (min-width: 55em) {
+  .side-socials {
+    margin-left: 0.5em;
+  }
   .side-socials:after {
     content: "";
     display: block;
@@ -577,6 +582,9 @@ a {
   }
 }
 @media (min-width: 55em) {
+  .side-email {
+    margin-right: 1.1em;
+  }
   .side-email:after {
     content: "";
     display: block;

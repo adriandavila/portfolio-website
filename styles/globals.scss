@@ -34,7 +34,7 @@
   --proj-straightBlue: #0868AC;
 
   // FD2155
-  --proj-machine-learning: #FF00E4;
+  --proj-machine-learning: #F037A5;
   --proj-fullstack: #06FF00;
   --proj-frontend: #08fdd8;
   --proj-backend: yellow;
@@ -44,6 +44,9 @@
   --breakpoint-large: 75em;
   --breakpoint-medium: 55em;
   --breakpoint-small: 35em;
+
+  // Misc
+  --side-element-padding: 1.7em;
 }
 
 html,
@@ -259,6 +262,10 @@ a {
   height: 100vh;
   padding-inline: clamp(25px, 7vw, 100px);
 }
+
+
+/* ------------- About ------------- */
+
 
 /* ------------- Experience ------------- */
 
@@ -636,6 +643,8 @@ a {
   }
   
   @media (min-width: 55em) {
+    margin-left: 0.5em;
+
     &:after {
       content: '';
       display: block;
@@ -656,7 +665,7 @@ a {
   position: fixed;
   bottom: 0;
   right: 0;
-
+  
   a {
     margin: 5px auto;
     padding: 12px;
@@ -681,6 +690,8 @@ a {
   }
   
   @media (min-width: 55em) {
+    margin-right: 1.1em;
+
     &:after {
       content: '';
       display: block;

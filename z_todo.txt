@@ -2,6 +2,7 @@ General:
 - Reposition side socials & email further in from sides (reference Brit website for numbers)
 - Some quick animation on website load?
 - future goal: create themes (bright & airy, nature, neon, etc...)
+- section title styling
 
 Home/Hero:
 - Create new background SVG & change background
@@ -17,10 +18,8 @@ Home/Hero:
 Projects:
 - Create archive (will require some routing - complicated!)
 - Limit "other projects" to 6, add "show more button" that limits to 12
-- display less "other projects" on mobile
 - add filters to "other projects"? !advanced
 - perfect the styling, spacing, etc...
-- "other projects" - machine-learning tag => machine learning (without hyphen)
 
 Research:
 - Styling the text
