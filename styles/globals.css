@@ -227,8 +227,40 @@ a {
   height: 100vh;
   padding-inline: clamp(25px, 7vw, 100px);
 }
+.section-hero .hero-title {
+  display: flex;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+.section-hero .hero-title h1 {
+  margin: 0px 0px 30px 4px;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+  font-weight: 400;
+}
+.section-hero .hero-title h2 {
+  margin: 0px;
+  font-size: clamp(40px, 8vw, 80px);
+}
+.section-hero .hero-title h3 {
+  margin: 0px;
+  font-size: clamp(40px, 8vw, 50px);
+}
 
 /* ------------- About ------------- */
+.section-about .content {
+  display: flex;
+}
+@media (min-width: 70em) {
+  .section-about .content .about-me {
+    width: 50%;
+  }
+}
+
 /* ------------- Experience ------------- */
 /* ------------- Projects ------------- */
 .featured-project {
@@ -401,6 +433,9 @@ a {
   color: var(--white);
   font-size: 16pt;
 }
+.research-paper .paper-content .subtitle {
+  display: flex;
+}
 .research-paper .paper-content .authors {
   color: var(--lightest-slate);
 }
@@ -419,9 +454,6 @@ a {
   background: var(--slate);
   width: 1px;
   margin-inline: 0.7em;
-}
-.research-paper .paper-content p {
-  display: flex;
 }
 .research-paper .paper-content .desc {
   margin-top: 1vh;

@@ -6,7 +6,11 @@ const ResearchPaper = ({ title, authors, date, desc, pdf, doi, image }) => {
         </div>
         <div className="paper-content">
             <h1>{title}</h1>
-            <p className="authors">{authors}<h3>{date}</h3></p>
+            <div className="subtitle">
+                <p className="authors">{authors}</p>
+                <h3>{date}</h3>
+            </div>
+            
             {/* <ul className="authors">
                 {authors && authors.map((author, i) => (
                     <li author={author} key={i}>{author}</li>

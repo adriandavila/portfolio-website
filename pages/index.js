@@ -7,21 +7,21 @@ import Contact from '../components/Contact'
 export default function Home() {
   return (
     <div className="main-container">
-      <div id="about">
+      <section id="about">
         <About />
-      </div>
+      </section>
       <section id="experience">
         <Experience />
       </section>
       <section id="projects">
         <Projects />
       </section>
-      <div id="research">
+      <section id="research">
         <Research />
-      </div>
-      <div id="contact">
+      </section>
+      <section id="contact">
         <Contact />
-      </div>
+      </section>
     </div>
   )
 }

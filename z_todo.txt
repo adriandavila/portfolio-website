@@ -11,7 +11,9 @@ Home/Hero:
 - Animations on navbar upon website load
 - Use JS to disable animation when resizing page?
 
-!!! About
+About:
+- Style content
+
 !!! Experience
 
 Projects:
@@ -21,9 +23,8 @@ Projects:
 - perfect the styling, spacing, etc...
 
 Research:
-- Styling the text
-- Work out details of how I want to display the details of the paper (I'm thinking maybe just put the citation)
 - Create research archive page?
+- Missing PDF and DOI links
 
 Contact:
 - Do I like the design? 
