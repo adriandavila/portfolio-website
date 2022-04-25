@@ -116,6 +116,34 @@ a {
   }
 }
 
+
+.section-title {
+  display: flex;
+  align-items: center;
+  color: var(--lightest-slate);
+  font-size: 21pt;
+
+  span {
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-weight: 300;
+    font-size: 18pt;
+    letter-spacing: 0;
+    margin-right: 0.2em;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: relative;
+    height: 1px;
+    background-color: var(--slate);
+    width: 35%;
+    margin-left: 0.5em;
+    opacity: 50%;
+  }
+}
+
 /* ------------- Navigation ------------- */
 .primary-header {
   margin: 0;
@@ -257,9 +285,13 @@ a {
   // }
 }
 
-/* ------------- Hero ------------- */
-.section-hero {
+/* ------------- Hero && home ------------- */
+.home {
   height: 100vh;
+}
+
+.section-hero {
+  margin-top: 6.5%;
   padding-inline: clamp(25px, 7vw, 100px);
 
   .hero-title {
@@ -270,9 +302,9 @@ a {
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    
+
     h1 {
-      margin: 0px 0px 30px 4px;
+      margin: 0px 0px 0px 4px;
       color: var(--green);
       font-family: var(--font-mono);
       font-size: clamp(var(--fz-sm),5vw,var(--fz-md));
@@ -288,11 +320,7 @@ a {
       margin: 0px;
       font-size: clamp(40px, 8vw, 50px);
     }
-  }
-  
-  
-  
-  
+  }  
 }
 
 

@@ -14,9 +14,7 @@ const Projects = () => {
 
     return (
         <div className="section-projects">
-            <div className="section-title">
-                <h1>03. Projects</h1>
-            </div>
+            <h1 className="section-title"><span aria-hidden="true">03.</span>Projects</h1>
 
             <div className="featured-projects">
                 {featuredProjects && featuredProjects.map((proj, i) => {
