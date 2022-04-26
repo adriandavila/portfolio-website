@@ -12,7 +12,9 @@ const Hero = () => {
         <div className="hero-subtitle">
           <p>{bio.paragraph}</p>
         </div>
-        <a className="green-button" href="" target="_blank" rel="">Contact Me!</a>
+        <div className="cta">
+          <a className="green-button" href="" target="_blank" rel="">Contact Me!</a>
+        </div>
       </div>
     </div>
   )

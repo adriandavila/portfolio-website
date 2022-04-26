@@ -73,7 +73,8 @@ a {
 
 /* Background Image on Homepage */
 .home {
-  background-image: url("../public/background-home-desktop.jpg");
+  background-image: url("/Test_Background_4.png");
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -273,14 +274,27 @@ a {
 }
 .section-hero .hero-title h2 {
   margin: 0px;
-  font-size: clamp(40px, 8vw, 80px);
+  font-size: 5.5rem;
+  color: var(--lightest-slate);
 }
 .section-hero .hero-title h3 {
   margin: 0px;
-  font-size: clamp(40px, 8vw, 50px);
+  font-size: 48px;
+  color: var(--lightest-slate);
+}
+.section-hero .hero-subtitle {
+  width: 53%;
+  font-size: 13pt;
+  color: var(--light-slate);
+}
+.section-hero .cta {
+  margin-top: 3.5em;
 }
 
 /* ------------- About ------------- */
+.section-about {
+  margin-top: 3em;
+}
 .section-about .content {
   display: flex;
 }

@@ -1,7 +1,6 @@
 General:
 - Some quick animation on website load?
 - future goal: create themes (bright & airy, nature, neon, etc...)
-- section title styling
 - update favicon once I have a new logo
 
 Home/Hero:
@@ -13,6 +12,7 @@ Home/Hero:
 
 About:
 - Style content
+- Add technologies
 
 !!! Experience
 

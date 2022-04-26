@@ -3,7 +3,7 @@ module.exports = {
   bio: {
     name: 'Adrian Davila',
     headline: "I'm a CS student @UWaterloo.",
-    paragraph: "Note: I want to create for myself a similar background as this: https://gridcritters.com/ - (I also have a screenshot on my desktop). Can also use this galaxy possibly: https://adobe.ly/3rFvtLJ . Will use same text I have from Brittany Chang Website. Desired navbar: https://www.youtube.com/watch?v=HbBMp6yUXO0",
+    paragraph: "I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.",
   },
 
   /* ------------- MY SOCIALS ------------- */
