@@ -104,7 +104,7 @@ a {
 .section-title {
   display: flex;
   align-items: center;
-  color: var(--lightest-slate);
+  color: var(--white);
   font-size: 21pt;
 }
 .section-title span {
@@ -424,6 +424,17 @@ a {
 .project .data-science h3 {
   color: var(--proj-data-science);
 }
+.project .technologies {
+  display: flex;
+  list-style: none;
+  font-family: var(--font-mono);
+  font-size: 10pt;
+  padding: 0;
+}
+.project .technologies * {
+  -webkit-padding-end: 0.8em;
+          padding-inline-end: 0.8em;
+}
 
 @media (max-width: 55em) {
   .featured-project {
@@ -514,6 +525,10 @@ a {
 }
 .research-paper .paper-content ul li[author="Adrian Davila"] {
   font-weight: 700;
+}
+
+.section-research .no-papers {
+  color: var(--light-slate);
 }
 
 /* ------------- Contact ------------- */

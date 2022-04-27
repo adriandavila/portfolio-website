@@ -4,8 +4,6 @@ General:
 - update favicon once I have a new logo
 
 Home/Hero:
-- Create new background SVG & change background
-- Fix hero text positioning & styling
 - New logo & update in navbar
 - Animations on navbar upon website load
 - Use JS to disable animation when resizing page?

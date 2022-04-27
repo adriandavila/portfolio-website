@@ -121,7 +121,7 @@ a {
 .section-title {
   display: flex;
   align-items: center;
-  color: var(--lightest-slate);
+  color: var(--white);
   font-size: 21pt;
 
   span {
@@ -501,6 +501,17 @@ a {
       color: var(--proj-data-science);
     }
   }
+
+  .technologies {
+    display: flex;
+    list-style: none;
+    font-family: var(--font-mono);
+    font-size: 10pt;
+    padding: 0;
+    * {
+      padding-inline-end: 0.8em;
+    }
+  }
 }
 
 @media (max-width: 55em) {
@@ -609,6 +620,12 @@ a {
         font-weight: 700;
       }
     }
+  }
+}
+
+.section-research {
+  .no-papers {
+    color: var(--light-slate);
   }
 }
 

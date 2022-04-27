@@ -7,7 +7,10 @@ const Research = () => {
     
     return (
         <div className="section-research">
-            {featuredPapers && (<h1 className="section-title"><span aria-hidden="true">04.</span>Research</h1>)}
+            {(<h1 className="section-title"><span aria-hidden="true">04.</span>Research</h1>)}
+            {(featuredPapers.length === 0 && (
+                <div className="no-papers">Currently working with Dr. Edith Law and Ph.D candidate Ken Jen in the Human Computer Interaction Lab investigating the role positive technology can play to help enact meaningful climate action.</div>
+            ))}
             <ul className="research-list">
                 {featuredPapers && featuredPapers.map((paper, i) => (
                     <li key={i}><ResearchPaper 
