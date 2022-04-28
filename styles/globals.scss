@@ -343,15 +343,15 @@ a {
 
   .content {
     display: flex;
+    align-items: center;
 
     @media (min-width: 70em) {
       .about-me {
         width: 50%;
+        color: var(--lightest-slate);
       }
     }
   }
-
- 
 }
 
 /* ------------- Experience ------------- */
@@ -829,3 +829,7 @@ a {
     }  
   }
 }
+
+
+
+

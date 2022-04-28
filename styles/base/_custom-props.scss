@@ -1,0 +1,10 @@
+@use 'sass:color';
+@use '../abstracts' as *;
+
+
+.orbit {
+    @each $name, $value in $colors {
+        --tech-#{$name}-light: #{$value};
+        --tech-#{$name}-dark: #{color.adjust($value, $lightness: -40%)};
+    }
+}

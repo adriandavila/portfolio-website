@@ -25,7 +25,6 @@ Research:
 - Missing PDF and DOI links
 
 Contact:
-- Do I like the design? 
 - Fix padding // margin
 
 

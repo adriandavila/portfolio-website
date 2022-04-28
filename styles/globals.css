@@ -297,10 +297,12 @@ a {
 }
 .section-about .content {
   display: flex;
+  align-items: center;
 }
 @media (min-width: 70em) {
   .section-about .content .about-me {
     width: 50%;
+    color: var(--lightest-slate);
   }
 }
 

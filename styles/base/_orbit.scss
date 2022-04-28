@@ -1,0 +1,121 @@
+// demo only
+
+.orbit {
+    font-family: system-ui;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    --speed: 150s;
+    margin-inline: 12rem;
+    margin-block: 12.5rem;
+
+    .centerImage {
+        display: grid;
+        place-items: center;
+        width: 10rem;
+        position: relative;
+
+        img {
+            position: absolute;
+            transition: opacity 500ms;
+
+            &:not(:first-child):hover {
+                opacity: 0;
+            }
+        }
+    }
+
+    .icon {
+        width: 4rem;
+    }
+
+    ul {
+        display: grid;
+        place-items: center;
+
+        position: relative;
+        list-style: none;
+
+        animation: ul-orbit var(--speed) linear infinite;
+
+        &:hover {
+            animation-play-state: paused;
+            & * {
+                animation-play-state: paused;
+            }
+        }
+    }
+
+    li {
+        position: absolute;
+        background-color: var(--tech-orange-light);
+        width: 7rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        overflow: hidden;
+        font-weight: 500;
+        color: var(--tech-white-light);
+        text-align: center;
+        line-height: 1;
+       
+        display: grid;
+        place-items: center;
+        
+        & > * {
+            position: absolute;
+            animation: hold-position var(--speed) linear infinite;
+        }
+
+        p {
+            background: var(--text-bg);
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+            transition: opacity 350ms;
+            opacity: 0;
+        }
+
+        &:hover > p {
+            opacity: 1;
+        }
+    }
+
+
+    $item-count: 8;
+    @for $i from 1 through $item-count {
+          $angle: (360deg / $item-count) * $i;
+    
+          li:nth-child(#{$i}) {
+                --icon-bg: var(--tech-#{$i}-light);
+                --text-bg: var(--tech-#{$i}-dark);
+                background-color: var(--icon-bg);
+                transform:    
+                    rotate(calc(-1 * #{$angle}))
+                    translate(11.5rem)
+                    rotate(#{$angle});
+          }
+    }
+
+}
+
+@keyframes ul-orbit {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes hold-position {
+    100% {
+        transform: rotate(-1turn);
+    }
+}
+
+@keyframes throb {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
