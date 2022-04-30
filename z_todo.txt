@@ -10,7 +10,7 @@ Home/Hero:
 
 About:
 - Style content
-- Add technologies
+- Replace image in technologies, maybe in stead of second image display text "a few technologies I've been working with recently"
 
 !!! Experience
 
@@ -19,6 +19,8 @@ Projects:
 - Limit "other projects" to 6, add "show more button" that limits to 12
 - add filters to "other projects"? !advanced
 - perfect the styling, spacing, etc...
+- Style the "other noteworthy projects" subheading
+- too much space in other projects between git // link & technologies
 
 Research:
 - Create research archive page?

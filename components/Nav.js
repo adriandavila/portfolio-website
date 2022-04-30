@@ -48,7 +48,7 @@ const Nav = () => {
   return (
     <div className="primary-header">
         <div>
-            <img src="ADlogo.png" alt="Adrian Davila Logo" className="logo"/>
+            <img src="adrian_logo.png" alt="Adrian Davila Logo" className="logo"/>
         </div>
 
         <button className="mobile-nav-toggle" onClick={handleClick} aria-controls="primary-navigation" aria-expanded={navButtonVisible}>
