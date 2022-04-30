@@ -298,11 +298,23 @@ a {
 .section-about .content {
   display: flex;
   align-items: center;
+  color: var(--lightest-slate);
 }
 @media (min-width: 70em) {
   .section-about .content .about-me {
     width: 50%;
-    color: var(--lightest-slate);
+  }
+}
+@media (max-width: 80em) {
+  .section-about .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-about .content .about-me {
+    width: 100%;
+  }
+  .section-about .content .recent-technologies {
+    margin-block: 3em;
   }
 }
 

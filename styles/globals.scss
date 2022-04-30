@@ -344,14 +344,31 @@ a {
   .content {
     display: flex;
     align-items: center;
+    color: var(--lightest-slate);
 
     @media (min-width: 70em) {
       .about-me {
         width: 50%;
-        color: var(--lightest-slate);
+        
       }
     }
   }
+
+  @media (max-width: 80em) {
+      .content {
+        display: flex;
+        flex-direction: column;
+
+        .about-me {
+          width: 100%;
+        }
+
+        .recent-technologies {
+          margin-block: 3em;
+        }
+      }
+  }
+
 }
 
 /* ------------- Experience ------------- */

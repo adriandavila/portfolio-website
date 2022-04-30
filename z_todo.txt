@@ -11,6 +11,7 @@ Home/Hero:
 About:
 - Style content
 - Replace image in technologies, maybe in stead of second image display text "a few technologies I've been working with recently"
+- Set mobile breakpoints & change flex direction when too small
 
 !!! Experience
 
